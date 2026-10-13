@@ -1,0 +1,28 @@
+/* Ручные правки сайта «Блеск» поверх стиля «Продающий» (style-prod.css не трогаем).
+   Подключается в index.html одной строкой сразу после style-prod.css:
+   <link rel="stylesheet" href="pravki.css">
+   После пересборки style-build файл остаётся, вернуть нужно только эту строку. */
+
+/* 1. Фон первого экрана светлее: машина видна, текст – на тёмной подложке слева (13.10.2026) */
+.s-hero__bg img { opacity: .62; filter: saturate(.9) contrast(1.15) brightness(1.05); object-position: 50% 65%; }
+.s-hero__bg::after { background: linear-gradient(90deg, color-mix(in srgb, var(--c-canvas) 80%, transparent) 0%, color-mix(in srgb, var(--c-canvas) 60%, transparent) 45%, color-mix(in srgb, var(--c-canvas) 15%, transparent) 75%), linear-gradient(180deg, transparent 55%, var(--c-canvas) 98%); }
+@media (max-width: 960px) {
+  .s-hero__bg img { object-position: 72% 100%; }
+  .s-hero__bg::after { background: linear-gradient(180deg, color-mix(in srgb, var(--c-canvas) 50%, transparent), color-mix(in srgb, var(--c-canvas) 72%, transparent) 55%, var(--c-canvas) 98%); }
+}
+
+/* 2. «уточнить» в форме записи там, где у услуги нет цены (сборщик оставляет пустое место).
+   Цену словом в styles.json не ставить: тогда в сообщение WhatsApp попадёт «NaN ₽». */
+.s-chip b:empty::before { content: "уточнить"; }
+
+/* 3. Значок «Демо» после названия в шапке (идея из копилки, пример Valis). Владелец одобрил сайт – удалить этот блок. */
+.s-bar__brand::after { content: "Демо"; margin-left: 10px; padding: 2px 8px; border: 1px solid var(--c-accent); border-radius: 999px; font: 500 .7rem/1.4 var(--f-text); letter-spacing: .06em; text-transform: uppercase; color: var(--c-accent); vertical-align: middle; }
+
+/* 4. Рейтинг в первом экране – ссылка на отзывы Карт со звёздами (разметка – вручную в index.html) */
+.s-rating a { color: inherit; text-decoration: none; }
+.s-rating a:hover u { color: var(--c-ink); }
+.s-rating u { text-underline-offset: 3px; }
+.s-rating .s-reviews__stars { margin-right: 8px; vertical-align: -1px; }
+
+/* 5. Звёзды закрашиваются точно по рейтингу: рамка по ширине пяти звёзд, иначе 4,7 выглядит как 5 полных */
+.s-reviews__stars { width: 4.4em; }

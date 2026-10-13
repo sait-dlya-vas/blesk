@@ -22,22 +22,11 @@
 :root { --c-canvas: #0c0d0f; --c-surface: #17191c; --c-ink: #f1f2f4; --c-ink-soft: #9ba1a9; --c-accent: #d3dae1; --c-accent-ink: #0c0d0f; --c-accent-deep: #d3dae1; --f-display: "Rubik", "Arial", system-ui, sans-serif; --f-text: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
-<style id="hero-fix">/* ручная правка 13.10.2026: фон первого экрана светлее, машина видна, текст – на тёмной подложке слева */
-.s-hero__bg img { opacity: .62; filter: saturate(.9) contrast(1.15) brightness(1.05); object-position: 50% 65%; }
-.s-hero__bg::after { background: linear-gradient(90deg, color-mix(in srgb, var(--c-canvas) 80%, transparent) 0%, color-mix(in srgb, var(--c-canvas) 60%, transparent) 45%, color-mix(in srgb, var(--c-canvas) 15%, transparent) 75%), linear-gradient(180deg, transparent 55%, var(--c-canvas) 98%); }
-/* ручная правка 13.10.2026 (идея из копилки, пример Valis): значок «Демо» в шапке и звёзды со ссылкой на отзывы в первом экране */
-.s-demo-badge { margin-left: 10px; padding: 2px 8px; border: 1px solid var(--c-accent); border-radius: 999px; font: 500 .7rem/1.4 var(--f-text); letter-spacing: .06em; text-transform: uppercase; color: var(--c-accent); vertical-align: middle; }
-.s-rating a { color: inherit; text-decoration: none; }
-.s-rating a:hover u { color: var(--c-ink); }
-.s-rating u { text-underline-offset: 3px; }
-.s-rating .s-reviews__stars { margin-right: 8px; vertical-align: -1px; }
-.s-reviews__stars { width: 4.4em; } /* рамка точно по ширине звёзд, иначе 4,7 выглядит как 5 полных */
-@media (max-width: 960px) { .s-hero__bg img { object-position: 72% 100%; } .s-hero__bg::after { background: linear-gradient(180deg, color-mix(in srgb, var(--c-canvas) 50%, transparent), color-mix(in srgb, var(--c-canvas) 72%, transparent) 55%, var(--c-canvas) 98%); } }
-</style>
+<link rel="stylesheet" href="pravki.css">
 </head>
 <body class="s-prod" id="top" data-wa="79507943711" data-tg="DetailingStudioBlesk" data-max="">
 <header class="s-bar" data-s-bar>
-  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Блеск<span class="s-demo-badge">Демо</span></a>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Блеск</a>
   <div class="s-bar__right">
     <a class="s-bar__tel" href="tel:+79507943711">+7 (950) 794-37-11</a>
     <a class="s-btn s-btn--sm" href="#widget">Записаться онлайн</a>
@@ -56,7 +45,7 @@
     <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00,21:00,22:00" data-message="Здравствуйте! Хочу записаться в «Блеск»: {услуга}, {день} в {время}. Машина (марка, класс) – напишу ниже." onsubmit="return false">
       <h2 class="s-widget__title">Запись на мойку</h2>
       <fieldset><legend>Услуга</legend>
-        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Экспресс-мойка кузова" data-price="800" data-from="1" data-min="" checked><span>Экспресс-мойка кузова</span><b>от 800 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Стандарт – мойка с протиркой" data-price="1000" data-from="1" data-min=""><span>Стандарт – мойка с протиркой</span><b>от 1 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Двухфазная мойка" data-price="1500" data-from="1" data-min=""><span>Двухфазная мойка</span><b>от 1 500 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Трёхфазная мойка" data-price="2000" data-from="1" data-min=""><span>Трёхфазная мойка</span><b>от 2 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Комплекс: кузов и салон" data-price="" data-from="" data-min=""><span>Комплекс: кузов и салон</span><b>уточнить</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="5" data-name="Мойка двигателя" data-price="4000" data-from="1" data-min=""><span>Мойка двигателя</span><b>от 4 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="6" data-name="Химчистка или полировка" data-price="" data-from="" data-min=""><span>Химчистка или полировка</span><b>уточнить</b></label></div>
+        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Экспресс-мойка кузова" data-price="800" data-from="1" data-min="" checked><span>Экспресс-мойка кузова</span><b>от 800 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Стандарт – мойка с протиркой" data-price="1000" data-from="1" data-min=""><span>Стандарт – мойка с протиркой</span><b>от 1 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Двухфазная мойка" data-price="1500" data-from="1" data-min=""><span>Двухфазная мойка</span><b>от 1 500 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Трёхфазная мойка" data-price="2000" data-from="1" data-min=""><span>Трёхфазная мойка</span><b>от 2 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Комплекс: кузов и салон" data-price="" data-from="" data-min=""><span>Комплекс: кузов и салон</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="5" data-name="Мойка двигателя" data-price="4000" data-from="1" data-min=""><span>Мойка двигателя</span><b>от 4 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="6" data-name="Химчистка или полировка" data-price="" data-from="" data-min=""><span>Химчистка или полировка</span><b></b></label></div>
       </fieldset>
       <fieldset><legend>День</legend><div class="s-chips" data-s-days></div></fieldset>
       <fieldset><legend>Время</legend><div class="s-chips" data-s-times></div></fieldset>
