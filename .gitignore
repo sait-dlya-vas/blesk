@@ -1,0 +1,7 @@
+*.md
+lab/
+raw/
+фото-с-карт/
+images.json
+styles.json
+style-lite.css

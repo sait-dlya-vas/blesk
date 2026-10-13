@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Блеск · Детейлинг-студия в Омске</title>
+<meta name="description" content="Ждёте в баре с кофе и смотрите, как моют. Запись онлайн, цена по классу машины – до приезда.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Мойка и детейлинг в Омске – вашу машину видно на экране">
+<meta property="og:description" content="Ждёте в баре с кофе и смотрите, как моют. Запись онлайн, цена по классу машины – до приезда.">
+<meta property="og:image" content="https://sait-dlya-vas.github.io/blesk/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://sait-dlya-vas.github.io/blesk/">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preload" as="image" href="assets/hero-lexus.webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%23d3dae1%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --c-canvas: #0c0d0f; --c-surface: #17191c; --c-ink: #f1f2f4; --c-ink-soft: #9ba1a9; --c-accent: #d3dae1; --c-accent-ink: #0c0d0f; --c-accent-deep: #d3dae1; --f-display: "Rubik", "Arial", system-ui, sans-serif; --f-text: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
+</style>
+<link rel="stylesheet" href="style-prod.css">
+<style id="hero-fix">/* ручная правка 13.10.2026: фон первого экрана светлее, машина видна, текст – на тёмной подложке слева */
+.s-hero__bg img { opacity: .62; filter: saturate(.9) contrast(1.15) brightness(1.05); object-position: 50% 65%; }
+.s-hero__bg::after { background: linear-gradient(90deg, color-mix(in srgb, var(--c-canvas) 80%, transparent) 0%, color-mix(in srgb, var(--c-canvas) 60%, transparent) 45%, color-mix(in srgb, var(--c-canvas) 15%, transparent) 75%), linear-gradient(180deg, transparent 55%, var(--c-canvas) 98%); }
+@media (max-width: 960px) { .s-hero__bg img { object-position: 72% 100%; } .s-hero__bg::after { background: linear-gradient(180deg, color-mix(in srgb, var(--c-canvas) 50%, transparent), color-mix(in srgb, var(--c-canvas) 72%, transparent) 55%, var(--c-canvas) 98%); } }
+</style>
+</head>
+<body class="s-prod" id="top" data-wa="79507943711" data-tg="DetailingStudioBlesk" data-max="">
+<header class="s-bar" data-s-bar>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Блеск</a>
+  <div class="s-bar__right">
+    <a class="s-bar__tel" href="tel:+79507943711">+7 (950) 794-37-11</a>
+    <a class="s-btn s-btn--sm" href="#widget">Записаться онлайн</a>
+  </div>
+</header>
+<main>
+  <section class="s-hero">
+    <div class="s-hero__text">
+      <p class="s-eyebrow">Детейлинг-студия · Омск</p>
+      <h1>Мойка и детейлинг в Омске – вашу машину видно на экране</h1>
+      <p class="s-lead">Ждёте в баре с кофе и смотрите, как моют. Запись онлайн, цена по классу машины – до приезда.</p>
+      <ul class="s-ticks"><li>Мойка в две или три фазы на химии Grass и Detail</li><li>В прайсе расписано, что входит в каждую мойку</li><li>Открыто каждый день с 9:00 до 23:00</li></ul>
+      <p class="s-rating"><b>4,7</b> на Яндекс.Картах · 114 отзывов</p>
+      <figure class="s-hero__photo"><img class="" src="assets/hero-lexus.webp" alt="Мастер полирует капот чёрного Lexus" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="09:00,10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00,21:00,22:00" data-message="Здравствуйте! Хочу записаться в «Блеск»: {услуга}, {день} в {время}. Машина (марка, класс) – напишу ниже." onsubmit="return false">
+      <h2 class="s-widget__title">Запись на мойку</h2>
+      <fieldset><legend>Услуга</legend>
+        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Экспресс-мойка кузова" data-price="800" data-from="1" data-min="" checked><span>Экспресс-мойка кузова</span><b>от 800 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Стандарт – мойка с протиркой" data-price="1000" data-from="1" data-min=""><span>Стандарт – мойка с протиркой</span><b>от 1 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Двухфазная мойка" data-price="1500" data-from="1" data-min=""><span>Двухфазная мойка</span><b>от 1 500 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Трёхфазная мойка" data-price="2000" data-from="1" data-min=""><span>Трёхфазная мойка</span><b>от 2 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Комплекс: кузов и салон" data-price="" data-from="" data-min=""><span>Комплекс: кузов и салон</span><b>уточнить</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="5" data-name="Мойка двигателя" data-price="4000" data-from="1" data-min=""><span>Мойка двигателя</span><b>от 4 000 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="6" data-name="Химчистка или полировка" data-price="" data-from="" data-min=""><span>Химчистка или полировка</span><b>уточнить</b></label></div>
+      </fieldset>
+      <fieldset><legend>День</legend><div class="s-chips" data-s-days></div></fieldset>
+      <fieldset><legend>Время</legend><div class="s-chips" data-s-times></div></fieldset>
+      <div class="s-bubble" aria-live="polite"><span class="s-bubble__label">Ваше сообщение</span><p data-s-bubble></p></div>
+      <div class="s-send">
+        <a class="s-btn s-btn--wide" data-s-msg="whatsapp" href="#">Записаться в WhatsApp</a>
+        <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">Telegram</a>
+      </div>
+      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      
+    </form></div>
+    <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero-lexus.webp" alt="Мастер полирует капот чёрного Lexus" decoding="async" fetchpriority="high"></figure>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Что входит в мойку</h2></header>
+    <div class="s-incl">
+      <div><h3>Входит</h3><ul><li>Предварительная мойка активной пеной Active Foam Maxima</li><li>Основная мойка шампунем Detail SP – в двух- и трёхфазной</li><li>Гидрофобное покрытие кузова – в трёхфазной</li><li>Протирка кузова и проёмов – начиная со «Стандарта»</li></ul></div>
+      <div><h3>Отдельно, если нужно</h3><ul><li>Мойка ковров – в «Экспресс» и «Стандарт» не входит</li><li>Турбосушка кузова</li><li>Мойка двигателя, химчистка салона, полировка</li></ul></div>
+    </div>
+  </section>
+
+  <section class="s-section s-reveal" id="prices">
+    <header class="s-section__head"><h2>Цены по классу машины</h2><p>Первая цена – для седана и хэтчбека. Кроссовер и внедорожник – в строке под названием. Прайс с карточки на Яндекс.Картах, обновлён 27 сентября.</p></header>
+    <div class="s-board"><div class="s-board__group">
+      <h3 class="s-board__title">Мойка кузова</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Экспресс<em>бесконтактная, без протирки, арок, порогов и ковров · кроссовер 1 000 ₽ · внедорожник 1 500 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 800 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Стандарт<em>бесконтактная с активной пеной, протирка кузова и проёмов · кроссовер 1 500 ₽ · внедорожник 2 000 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Двухфазная контактная<em>пена Active Foam Maxima + шампунь Detail SP · кроссовер 2 000 ₽ · внедорожник 2 500 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 500 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Трёхфазная контактная<em>две фазы + гидрофобное покрытие Detail · кроссовер 2 500 ₽ · внедорожник 3 000 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Техоблив<em>техническая мойка без пены и протирки · кроссовер 800 ₽ · внедорожник 1 000 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Кузов и салон</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">ЕвроКомплекс<em>двухфазная мойка кузова и уборка салона · внедорожник и минивэн 7 000 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Премиум Комплекс<em>ЕвроКомплекс + покрытие кузова твёрдым воском Hard Wax · внедорожник и минивэн 8 000 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Комплекс «Кузов. Салон.»<em>поддерживающий, не позже двух недель после Евро- или Премиум Комплекса · кроссовер 5 000 ₽ · внедорожник 6 000 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 4 000 ₽</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Дополнительно</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Турбосушка кузова<em>тёплым воздухом, без касания · кроссовер 2 000 ₽ · внедорожник 3 000 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Мойка и сушка двигателя<em>Grass Motor Cleaner, после мойки продувка воздухом · кроссовер 5 000 ₽ · внедорожник 6 000 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 4 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Химчистка салона</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Полировка кузова</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+      </ul>
+    </div></div>
+    <p class="s-note">Цены, которых нет в прайсе, назовём при записи.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Как проходит</h2></header>
+    <ol class="s-steps">
+      <li class="s-steps__item"><span class="s-steps__n">01</span><h3>Выбираете услугу, день и время</h3><p>В форме на сайте – сообщение уйдёт нам в WhatsApp или Telegram.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">02</span><h3>Приезжаете к своему времени</h3><p>Машина заезжает в бокс, а вы идёте в зону ожидания.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">03</span><h3>Смотрите мойку на экране</h3><p>Камеры показывают боксы, рядом кофе, чай и Wi-Fi.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">04</span><h3>Забираете чистую машину</h3><p>Оплата картой, по QR-коду, через СБП или наличными – как вам удобно.</p></li>
+    </ol>
+  </section>
+
+  <section class="s-photos s-reveal" aria-label="Фото"><figure><img class="" src="assets/protirka.webp" alt="Мастер в форме «Блеск» протирает машину после мойки" loading="lazy" decoding="async"><figcaption>Протирка кузова и проёмов</figcaption></figure><figure><img class="" src="assets/sushka.webp" alt="Сушка кузова после мойки" loading="lazy" decoding="async"><figcaption>Сушка после мойки</figcaption></figure><figure><img class="" src="assets/ozhidanie.webp" alt="Зона ожидания с диванами и кофейным автоматом" loading="lazy" decoding="async"><figcaption>Зона ожидания с кофе</figcaption></figure></section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Почему к нам возвращаются</h2></header>
+    <ul class="s-promises">
+      <li><h3>Состав каждой мойки – в прайсе</h3><p>Видно, чем мойка за 800 ₽ отличается от мойки за 2 000 ₽, ещё до записи.</p></li>
+      <li><h3>Химия названа по маркам</h3><p>Активная пена Grass, шампунь и воск Detail – в названии каждой услуги.</p></li>
+      <li><h3>Видно, как моют вашу машину</h3><p>На экране в зоне ожидания – трансляция из боксов.</p></li>
+      <li><h3>Скидка постоянным клиентам</h3><p>Для постоянных клиентов есть дисконтная система.</p></li>
+    </ul>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head s-section__head--reviews"><h2>Отзывы с Яндекс.Карт</h2><p class="s-reviews__rating"><span class="s-reviews__num">4,7</span><span class="s-reviews__stars" style="--r: 4.7" aria-label="рейтинг 4,7 из 5"></span><span class="s-reviews__count">114 отзывов</span><a class="s-reviews__all" href="https://yandex.ru/maps/org/blesk/169661984470/" target="_blank" rel="noopener">Читать все отзывы на Яндекс.Картах</a></p></header>
+    <ul class="s-reviews">
+      <li><blockquote>«Очень удобный и современный сервис в центре нашего города. Запись онлайн позволяет экономить много своего времени. Не первый раз сюда обращаемся, ребята не когда не подводили, после посещения и кузов чистый и салон убран. Рекомендую 👍»</blockquote><p class="s-reviews__who">Юлия Викторовна · 7 июля 2025</p></li>
+      <li><blockquote>«Удобная запись с описанием услуг и ценой через приложение, Яндекс GO либо 2ГИС, заказывал комплекс услуг и мойку двигателя, результат вполне впечатлил, всё сделали на профессиональном уровне. Рекомендую!»</blockquote><p class="s-reviews__who">Павел Долгих · 10 июля 2025</p></li>
+      <li><blockquote>«Отличная мойка! Моют лучше всех, и цена нормальная. Удобный бар где можно ожидать, зимой не замерзнешь, летом не вспотеешь, и даже видно по камерам процесс мойки, кому это важно. Рекомендую!»</blockquote><p class="s-reviews__who">Вован Шиманский · 12 февраля 2024</p></li>
+    </ul>
+    <p class="s-note">Отзывы с карточки на Яндекс.Картах, без правок.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Частые вопросы</h2></header>
+    <div class="s-faq"><details><summary>Как записаться?</summary><p>Выберите услугу, день и время в форме вверху страницы – сообщение уйдёт нам в WhatsApp или Telegram. Ещё можно позвонить или нажать «Записаться онлайн» на Яндекс.Картах.</p></details><details><summary>Чем двухфазная мойка отличается от трёхфазной?</summary><p>В трёхфазной после двух этапов мойки кузов покрывают гидрофобным составом Detail – вода с него скатывается.</p></details><details><summary>Где подождать, пока моют машину?</summary><p>В зоне ожидания: кофе, чай, Wi-Fi и экран с видео из боксов.</p></details><details><summary>Можно приехать с собакой или кошкой?</summary><p>Да, с питомцами можно.</p></details><details><summary>Есть подарочный сертификат?</summary><p>Да. Сумму и оформление подскажем в WhatsApp или по телефону.</p></details></div>
+  </section>
+
+  <section class="s-section s-final s-reveal" id="contacts">
+    <header class="s-section__head"><h2>Запишитесь на мойку на удобное время</h2></header>
+    <div class="s-contacts">
+      <dl>
+        <div><dt>Адрес</dt><dd>5-я Северная улица, 106, Омск</dd></div>
+        <div><dt>Часы</dt><dd>Каждый день 09:00–23:00</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79507943711">+7 (950) 794-37-11</a></dd></div>
+      </dl>
+      <div class="s-contacts__actions">
+        <a class="s-btn" href="#widget">Записаться онлайн</a>
+        <a class="s-btn s-btn--ghost" data-s-msg="whatsapp" href="#">WhatsApp</a>
+        <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">Telegram</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="s-foot"><p>Блеск · Омск</p><p>Детейлинг-студия: мойка кузова в две и три фазы, комплексы, мойка двигателя, химчистка, полировка</p></footer>
+<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Записаться онлайн</a><a class="s-btn s-btn--ghost" href="tel:+79507943711">Позвонить</a></nav>
+<script src="style.js" defer></script>
+</body>
+</html>
